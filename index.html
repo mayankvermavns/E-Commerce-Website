@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Foodie Hub | Urban Food E-Commerce</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+    <nav class="navbar">
+        <h2>🌱 FoodieHub</h2>
+        <div class="nav-links">
+            <a href="#home">Home</a>
+            <a href="#menu">Menu</a>
+            <a href="#cart">Cart</a>
+            <a href="#contact">Contact</a>
+        </div>
+    </nav>
+
+    <!-- HOME -->
+    <section id="home" class="home">
+        <div class="overlay"></div>
+        <div class="home-text">
+            <h1>Urban Food Junction</h1>
+            <p>Healthy • Fresh • Delicious Meals</p><br>
+            <a href="#menu" class="btn">Explore Menu</a>
+        </div>
+    </section>
+
+    <!-- MENU -->
+    <section id="menu" class="food-section">
+        <h2 class="section-title">🍽 Our Veg Menu</h2>
+
+        <div class="food-card">
+            <img src="https://images.unsplash.com/photo-1604382355076-af4b0eb60143">
+            <h3>Veg Cheese Pizza</h3>
+            <p class="price">₹299</p>
+            <button onclick="addToCart('Veg Cheese Pizza',299)">Add to Cart</button>
+        </div>
+
+        <div class="food-card">
+            <img src="https://images.unsplash.com/photo-1550547660-d9450f859349">
+            <h3>Veg Burger</h3>
+            <p class="price">₹149</p>
+            <button onclick="addToCart('Veg Burger',149)">Add to Cart</button>
+        </div>
+
+        <div class="food-card">
+            <img src="https://images.unsplash.com/photo-1525755662778-989d0524087e">
+            <h3>Veg Pasta</h3>
+            <p class="price">₹199</p>
+            <button onclick="addToCart('Veg Pasta',199)">Add to Cart</button>
+        </div>
+
+        <div class="food-card">
+            <img src="https://images.unsplash.com/photo-1546069901-ba9599a7e63c">
+            <h3>Veg Salad</h3>
+            <p class="price">₹129</p>
+            <button onclick="addToCart('Veg Salad',129)">Add to Cart</button>
+        </div>
+
+        <div class="food-card">
+            <img src="https://images.unsplash.com/photo-1617196034183-421b4917c92d">
+            <h3>Paneer Tikka</h3>
+            <p class="price">₹249</p>
+            <button onclick="addToCart('Paneer Tikka',249)">Add to Cart</button>
+        </div>
+
+        <div class="food-card">
+            <img src="https://images.unsplash.com/photo-1631515243349-e0cb75fb8d3a">
+            <h3>Veg Biryani</h3>
+            <p class="price">₹219</p>
+            <button onclick="addToCart('Veg Biryani',219)">Add to Cart</button>
+        </div>
+
+        <!-- FIXED SANDWICH IMAGE -->
+        <div class="food-card">
+            <img src="https://cdn.pixabay.com/photo/2016/03/05/19/02/hamburger-1238246_1280.jpg">
+            <h3>Veg Sandwich</h3>
+            <p class="price">₹119</p>
+            <button onclick="addToCart('Veg Sandwich',119)">Add to Cart</button>
+        </div>
+
+
+        <!-- NEW FOOD 1 -->
+        <div class="food-card">
+            <img src="https://images.unsplash.com/photo-1601050690597-df0568f70950">
+            <h3>Chole Bhature</h3>
+            <p class="price">₹179</p>
+            <button onclick="addToCart('Chole Bhature',179)">Add to Cart</button>
+        </div>
+
+        <!-- NEW FOOD 2 -->
+        <div class="food-card">
+            <img src="https://images.unsplash.com/photo-1626074353765-517a681e40be">
+            <h3>Veg Momos</h3>
+            <p class="price">₹139</p>
+            <button onclick="addToCart('Veg Momos',139)">Add to Cart</button>
+        </div>
+
+    </section>
+
+    <!-- CART -->
+    <section id="cart" class="cart-section">
+        <h2>🛒 Your Cart</h2>
+
+        <div class="cart-box">
+            <ul id="cart-items"></ul>
+
+            <div class="total-box">
+                <p>Total Items: <span id="item-count">0</span></p>
+                <h3>Total Amount</h3>
+                <h1>₹ <span id="total">0</span></h1>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="contact">
+        <h2>📞 Contact Us</h2>
+
+        <div class="contact-box">
+            <form>
+                <input type="text" placeholder="Your Name" required>
+                <input type="email" placeholder="Your Email" required>
+                <textarea placeholder="Your Message"></textarea>
+                <button type="submit">Send Message</button>
+            </form>
+
+            <div class="contact-info">
+                <p><b>Email:</b> foodiehub@gmail.com</p>
+                <p><b>Phone:</b> +91 XXXXXX3210</p>
+                <p><b>Location:</b> India</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>© 2025 Foodie Hub | Veg Food E-Commerce Project</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
